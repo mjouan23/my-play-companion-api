@@ -10,8 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: CDNievas/heroku-action@v1.0 # This is the action
+      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
-          heroku_email: "magali.jouan@novei"
+          # heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_api_key: "d07f7679-57c8-47ff-ba9c-2b43b985e3a9"
-          heroku_app_name: "my-play-companion-api"
+          heroku_app_name: "my-play-companion-api" #Must be unique in Heroku
+          heroku_email: "magali.jouan@novei"
