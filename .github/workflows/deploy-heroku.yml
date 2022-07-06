@@ -13,6 +13,6 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
           # heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_api_key: "d07f7679-57c8-47ff-ba9c-2b43b985e3a9"
+          heroku_api_key: ${{secrets.HEROKU_API}}
           heroku_app_name: "my-play-companion-api" #Must be unique in Heroku
           heroku_email: "magali.jouan@novei"
